@@ -15,6 +15,13 @@
       "matches": ["*://preview.redd.it/*"],
       "js": ["reddimgfix.js"]
     }
-  ]
+  ],
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "redditimgfix@varier2006.com"
+    }
+  }
+
 
 }
