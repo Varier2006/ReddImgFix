@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "RedditImageFix",
+  "version": "1.0",
+
+  "description": "Forces all opened Reddit images to be png and not webp",
+
+  "icons": {
+    "48": "icons/icon-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://preview.redd.it/*"],
+      "js": ["reddimgfix.js"]
+    }
+  ]
+
+}
