@@ -1,9 +1,8 @@
 const link = location.href
-const neco = link.replace("preview","i")
-let newlink = ""
-let x = 0
-while (neco[x] !== "?"){
-    newlink= (newlink+neco[x])
-    x++
+function convertRedditUrl(inputUrl) {
+  const match = inputUrl.match(/\/([a-zA-Z0-9]+\.jpg)\?.*$/);
+  return match ? `https://www.reddit.com/media?url=https://i.redd.it/${match[1]}` : null;
 }
-location.replace(newlink)
+
+const newUrl = convertRedditUrl(link);
+location.replace(newUrl || alert("Invalid URL or pattern not matched."))
