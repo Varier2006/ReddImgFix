@@ -5,4 +5,4 @@ function convertRedditUrl(inputUrl) {
 }
 
 const newUrl = convertRedditUrl(link);
-location.replace(newUrl || alert("Invalid URL or pattern not matched.")
+location.replace(newUrl || alert("Invalid URL or pattern not matched."))
