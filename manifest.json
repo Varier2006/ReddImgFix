@@ -1,27 +1,23 @@
 {
-
   "manifest_version": 2,
   "name": "RedditImageFix",
-  "version": "1.0",
-
-  "description": "Forces all opened Reddit images to be png and not webp",
-
+  "version": "1.4",
+  "description": "Forces all opened Reddit images to be PNG and not WebP",
   "icons": {
     "48": "icons/icon-48.png"
   },
-
+  "permissions": [
+    "activeTab"
+  ],
   "content_scripts": [
     {
-      "matches": ["*://preview.redd.it/*"],
+      "matches": ["*://*.reddit.com/*"],
       "js": ["reddimgfix.js"]
     }
   ],
-
   "browser_specific_settings": {
     "gecko": {
       "id": "reddimgfix@varier.com"
     }
   }
-
-
 }
