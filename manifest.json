@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "RedditImageFix",
-  "version": "1.4",
+  "version": "1.5",
   "description": "Forces all opened Reddit images to be PNG and not WebP",
   "icons": {
     "48": "icons/icon-48.png"
